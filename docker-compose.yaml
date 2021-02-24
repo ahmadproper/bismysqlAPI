@@ -1,0 +1,24 @@
+version: '2'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: web.dockerfile
+    volumes:
+      - ./:/var/www
+    ports:
+      - "8011:80"
+    links:
+      - bis
+
+  bis:
+    build:
+      context: ./
+      dockerfile: bis.dockerfile
+    volumes:
+      - ./:/var/www
+
+  cache:
+    image: redis:3.0
+    ports:
+      - "63791:6379"

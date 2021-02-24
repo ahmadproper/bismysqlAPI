@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/56071154/how-to-call-api-from-controller-laravel-without-using-curl-and-guzzle-as-its-not

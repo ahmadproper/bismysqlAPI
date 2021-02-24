@@ -1,0 +1,1 @@
+https://laravel-json-api.readthedocs.io/en/latest/features/http-clients/
